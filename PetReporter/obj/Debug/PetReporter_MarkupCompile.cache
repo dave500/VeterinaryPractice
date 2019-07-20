@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Dev\Elecktra-Solution\VeterinaryPractice\PetReporter\obj\Debug\
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\
 PetReporter
 none
 false
 DEBUG;TRACE
-C:\Dev\Elecktra-Solution\VeterinaryPractice\PetReporter\App.xaml
-2-851869960
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\App.xaml
+3-1507774071
 
-10-1315554920
-123-2145452972
-MainWindow.xaml;Views\ReportView.xaml;
+12-2063313225
+1231123530889
+MainWindow.xaml;Views\OwnerView.xaml;Views\ReportView.xaml;
 
 False
 

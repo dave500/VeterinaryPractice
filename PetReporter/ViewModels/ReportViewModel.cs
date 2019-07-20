@@ -13,56 +13,29 @@ namespace PetReporter.ViewModels
     {
         private readonly IReportRepo _reportRepo;
         private readonly IWindowManager _windowManager;
+        private readonly Owner _owner;
 
 
-        public ReportViewModel(IReportRepo reportRepo, IWindowManager windowManager)
+        public ReportViewModel(IReportRepo reportRepo, IWindowManager windowManager, Owner owner)
         {
             _reportRepo = reportRepo;
             _windowManager = windowManager;
-            Owners = new BindableCollection<Owner>(reportRepo.GetOwners());
+            _owner = owner;
+            Animals = new BindableCollection<Animal>(_reportRepo.GetAnimals(_owner));
         }
 
-        private BindableCollection<Owner> _owners = new BindableCollection<Owner>();
         private String _title = "Park View Veterinary Practice";
         private String _subTitle = "Report Generator";
         private String _ownerDDLabel = "Select Owner";
 
+        private BindableCollection<Animal> _animals = new BindableCollection<Animal>();
+       
 
-        public BindableCollection<Owner> Owners
+
+        public BindableCollection<Animal> Animals
         {
-            get { return _owners; }
-            set { _owners = value; }
+            get { return _animals; }
+            set { _animals = value; }
         }
-
-        public String Title
-        {
-            get { return _title; }
-            set { _title = value; }
-        }
-
-        public String SubTitle
-        {
-            get { return _subTitle; }
-            set { _subTitle = value; }
-        }
-
-        public String OwnerLabel
-        {
-            get { return _ownerDDLabel; }
-            set { _ownerDDLabel = value; }
-        }
-
-        private Owner _selectedOwner;
-
-        public Owner SelectedOwner
-        {
-            get { return _selectedOwner; }
-            set
-            {
-                _selectedOwner = value;
-                NotifyOfPropertyChange(() => SelectedOwner);
-            }
-        }
-
     }
 }

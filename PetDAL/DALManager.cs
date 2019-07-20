@@ -50,6 +50,49 @@ namespace PetDAL
             return owners;
         }
 
+        public List<Animal> GetAnimals(Owner owner)
+        {
+            List<Animal> animals = new List<Animal>();
+
+            StringBuilder selectBuilder = new StringBuilder();
+            String whereClause = "";
+
+            if (owner != null)
+            {
+                whereClause = String.Format("WHERE p.OwnerID = {0} ", owner.OwnerID);
+            }
+            
+
+            selectBuilder.Append("SELECT AnimalID, PetID, OwnerID, Type, Name, JoinedPractice, Behaviour, NumberOfVisits, TotalCost, (TotalCost / NumberOfVisits) AS CostPerVisit from ( ");
+            selectBuilder.Append("SELECT a.AnimalID, p.PetID, p.OwnerID, a.Type, p.Name, p.JoinedPractice, c.Behaviour, Count(v.PetID) as NumberOfVisits, sum(pr.Cost) TotalCost from Animal a ");
+            selectBuilder.Append("JOIN Pet p ON P.AnimalID = a.AnimalID ");
+            selectBuilder.Append("JOIN Visit v ON v.PetID = p.PetID ");
+            selectBuilder.Append("JOIN Procedures pr ON pr.ProcedureID = v.ProcedureID ");
+            selectBuilder.Append("Left Outer JOIN Characteristics c ON P.AnimalID = c.AnimalID AND p.PetID = c.PetID ");
+
+            if (!String.IsNullOrEmpty(whereClause))
+            {
+                selectBuilder.Append(whereClause);
+            }
+
+            selectBuilder.Append("Group by a.AnimalID, p.PetID, p.OwnerID, a.Type, p.Name, p.JoinedPractice, c.Behaviour) Animals ");
+
+            try
+            {
+                using (SqlConnection con = CreateSqlServerConnection())
+                {
+                    animals = con.Query<Animal>(selectBuilder.ToString()).ToList();
+                }
+            }
+            catch (Exception e)
+            {
+
+                throw;
+            }
+
+            return animals;
+        }
+
         private SqlConnection CreateSqlServerConnection()
         {
             SqlConnection connection = new SqlConnection();

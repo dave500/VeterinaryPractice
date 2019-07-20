@@ -28,13 +28,13 @@ namespace PetReporter
             container.Singleton<IEventAggregator, EventAggregator>();
             container.Singleton<IWindowManager, WindowManager>();
 
-            container.PerRequest<ReportViewModel>();
+            container.PerRequest<OwnerViewModel>();
         }
 
 
         protected override void OnStartup(object sender, StartupEventArgs e)
         {
-            DisplayRootViewFor<ReportViewModel>();
+            DisplayRootViewFor<OwnerViewModel>();
         }
 
 

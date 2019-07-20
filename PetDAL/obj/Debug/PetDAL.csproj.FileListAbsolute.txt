@@ -7,3 +7,12 @@ C:\Dev\Elecktra-Solution\VeterinaryPractice\PetDAL\bin\Debug\Dapper.xml
 C:\Dev\Elecktra-Solution\VeterinaryPractice\PetDAL\obj\Debug\PetDAL.csprojResolveAssemblyReference.cache
 C:\Dev\Elecktra-Solution\VeterinaryPractice\PetDAL\obj\Debug\PetDAL.dll
 C:\Dev\Elecktra-Solution\VeterinaryPractice\PetDAL\obj\Debug\PetDAL.pdb
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetDAL\bin\Debug\PetDAL.dll
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetDAL\bin\Debug\PetDAL.pdb
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetDAL\bin\Debug\Dapper.dll
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetDAL\bin\Debug\PetLib.dll
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetDAL\bin\Debug\PetLib.pdb
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetDAL\bin\Debug\Dapper.xml
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetDAL\obj\Debug\PetDAL.csprojResolveAssemblyReference.cache
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetDAL\obj\Debug\PetDAL.dll
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetDAL\obj\Debug\PetDAL.pdb

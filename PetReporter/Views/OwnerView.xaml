@@ -1,4 +1,4 @@
-﻿<Window x:Class="PetReporter.Views.ReportView"
+﻿<Window x:Class="PetReporter.Views.OwnerView"
          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -36,6 +36,34 @@
             </Border>
 
         </Grid>
+
+        <!--Row 2-->
         
+        <Border  VerticalAlignment="Center" Grid.Row="2" Grid.Column="2" Width="120" Margin="10,0,10,0">
+            <TextBlock FontSize="15" FontWeight="Medium" Text="{Binding OwnerLabel}"></TextBlock>
+        </Border>
+        
+        <ComboBox Grid.Row="2" Grid.Column="3" x:Name="Owners" Margin="10,20,20,20"
+                SelectedItem="{Binding Path=SelectedOwner, Mode=OneWayToSource}"
+                DisplayMemberPath="FullName" />
+
+        <StackPanel Grid.Row="2" Grid.Column="5" Grid.RowSpan="2">
+        <Button Content="Select User" Margin="10,20,10,10" Height="30" Width="100">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <cal:ActionMessage MethodName="LoadReportDetails" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+
+        <Button Content="Select All" Margin="10" Height="30" Width="100">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <cal:ActionMessage MethodName="LoadReportDetails" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+        </StackPanel>
+
     </Grid>
 </Window>

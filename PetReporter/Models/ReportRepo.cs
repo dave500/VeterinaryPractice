@@ -22,5 +22,10 @@ namespace PetReporter.Models
         {
            return _dalMgr.GetOwners();
         }
+
+        public List<Animal> GetAnimals(Owner owner)
+        {
+            return _dalMgr.GetAnimals(owner);
+        }
     }
 }
