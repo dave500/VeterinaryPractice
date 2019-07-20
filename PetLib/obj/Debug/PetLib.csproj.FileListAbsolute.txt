@@ -1,0 +1,5 @@
+C:\Dev\Elecktra-Solution\VeterinaryPractice\PetLib\bin\Debug\PetLib.dll
+C:\Dev\Elecktra-Solution\VeterinaryPractice\PetLib\bin\Debug\PetLib.pdb
+C:\Dev\Elecktra-Solution\VeterinaryPractice\PetLib\obj\Debug\PetLib.csprojResolveAssemblyReference.cache
+C:\Dev\Elecktra-Solution\VeterinaryPractice\PetLib\obj\Debug\PetLib.dll
+C:\Dev\Elecktra-Solution\VeterinaryPractice\PetLib\obj\Debug\PetLib.pdb
