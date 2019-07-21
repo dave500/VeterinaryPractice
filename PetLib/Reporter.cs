@@ -9,22 +9,33 @@ namespace PetLib
 {
     public static class Reporter
     {
-        public static void printReport(IEnumerable<Animal> pets, string filename)
-        {
-            List<string> entries = new List<string>();
-            entries.Add("Owners name,Date Joined Practice,Number Of Visits,Number of Lives");
-            foreach (var p in pets)
-            {
-                var entry = string.Join(" ", p.FirstName, p.LastName) + p.JoinedPractice + "," + p.NumberOfVisits;
-                //if (p is Cat)
-                //{
-                //    var cat = p as Cat;
-                //    entry += "," + cat.NumberOfVisits;
-                //}
+        
 
-                entries.Add(entry);
+        
+
+
+
+        public static bool WriteToXls(string dataToWrite)
+        {
+            try
+            {
+                string destination = DateTime.Now.ToString("dd_MM_yyyy_HH_mm") + "VetCustomerReport";
+                foreach (char c in System.IO.Path.GetInvalidFileNameChars())
+                {
+                    destination = destination.Replace(c, '_');
+                }
+                destination = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + destination + ".xlsx";
+                FileStream fs = new FileStream(destination, FileMode.Create, FileAccess.Write);
+                StreamWriter objWrite = new StreamWriter(fs);
+                objWrite.Write(dataToWrite);
+                objWrite.Close();
             }
-            File.WriteAllLines(filename, entries.ToArray());
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }

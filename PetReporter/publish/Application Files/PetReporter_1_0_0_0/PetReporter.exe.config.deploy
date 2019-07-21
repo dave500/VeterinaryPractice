@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.1" />
+    </startup>
+  <appSettings>
+    <add key="SQLServer" value="DAVEH-WORKXPS15" />
+    <add key="SQLServerDb" value="VeterinaryPractice" />
+    <add key="SQLServerUsr" value="" />
+    <add key="SQLServerPwd" value="" />
+
+  </appSettings>
+</configuration>

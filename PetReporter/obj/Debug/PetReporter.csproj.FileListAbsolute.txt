@@ -47,14 +47,12 @@ C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\bin\Debug\Caliburn.Micro.x
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\bin\Debug\Caliburn.Micro.Platform.xml
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\bin\Debug\Caliburn.Micro.Platform.Core.xml
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\bin\Debug\Dapper.xml
-C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\MainWindow.g.cs
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\Views\OwnerView.g.cs
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\App.g.cs
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\PetReporter_MarkupCompile.cache
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\PetReporter_MarkupCompile.lref
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\App.baml
-C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\MainWindow.baml
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\Views\OwnerView.baml
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\PetReporter.g.resources
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\PetReporter.Properties.Resources.resources
@@ -62,3 +60,7 @@ C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\PetReporter.cspr
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\PetReporter.csprojResolveAssemblyReference.cache
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\Views\ReportView.g.cs
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\Views\ReportView.baml
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\bin\Debug\PetReporter.exe.manifest
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\bin\Debug\PetReporter.application
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\PetReporter.exe.manifest
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporter\obj\Debug\PetReporter.application

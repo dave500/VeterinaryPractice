@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
              xmlns:cal="http://www.caliburnproject.org"
-        Title="OwnerView" Height="450" Width="800">
+        Title="OwnerView" Height="450" Width="800" ResizeMode="NoResize" WindowStyle="SingleBorderWindow">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -37,5 +37,42 @@
 
         </Grid>
         
+        <!-- Row 2-->
+
+        <Grid Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="4" Margin="20,20,20,20">
+            <DataGrid x:Name="Animals" AlternatingRowBackground="LightGray" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Full Name" Binding="{Binding Path=FullName}" />
+                    <DataGridTextColumn Header="Joined Practice" Binding="{Binding Path=JoinedPractice, StringFormat=yyyy/MM/dd}" />
+                    <DataGridTextColumn Header="Animal Name" Binding="{Binding Path=AnimalName}" />
+                    <DataGridTextColumn Header="Species" Binding="{Binding Path=Type}" />
+                    <DataGridTextColumn Header="Number Of Visits" Binding="{Binding Path=NumberOfVisits}" />
+                    <DataGridTextColumn Header="Cost Per Visit" Binding="{Binding Path=CostPerVisit}" />
+                    <DataGridTextColumn Header="Character" Binding="{Binding Path=Behaviour}" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <!-- Row 3-->
+
+        <Button Grid.Row="3" Grid.Column="2" DataContext="{Binding}" Content="Export csv" Margin="10" Height="30" Width="100">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <cal:ActionMessage MethodName="ExportCSV" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+
+        <Border  VerticalAlignment="Center" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Width="300" Margin="10,0,10,0">
+            <TextBlock FontSize="15"  FontWeight="Medium" Foreground="{Binding ReportColour}" Text="{Binding ReportMessage}"></TextBlock>
+        </Border>
+
+        <Button Grid.Row="3" Grid.Column="5" DataContext="{Binding}" Content="Home" Margin="10" Height="30" Width="100">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <cal:ActionMessage MethodName="ReturnHome" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+
     </Grid>
 </Window>

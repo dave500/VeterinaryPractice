@@ -9,8 +9,8 @@ namespace PetLib
     public class Owner
     {
         public int OwnerID { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        //public string FirstName { get; set; }
+        //public string LastName { get; set; }
         public string FullName { get; set; }
     }
 }

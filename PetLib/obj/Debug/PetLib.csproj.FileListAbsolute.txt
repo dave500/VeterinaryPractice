@@ -7,4 +7,3 @@ C:\Dev\Elekta-Solution\VeterinaryPractice\PetLib\bin\Debug\PetLib.dll
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetLib\bin\Debug\PetLib.pdb
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetLib\obj\Debug\PetLib.dll
 C:\Dev\Elekta-Solution\VeterinaryPractice\PetLib\obj\Debug\PetLib.pdb
-C:\Dev\Elekta-Solution\VeterinaryPractice\PetLib\obj\Debug\PetLib.csprojResolveAssemblyReference.cache

@@ -61,9 +61,8 @@ namespace PetDAL
             {
                 whereClause = String.Format("WHERE p.OwnerID = {0} ", owner.OwnerID);
             }
-            
 
-            selectBuilder.Append("SELECT AnimalID, PetID, OwnerID, Type, Name, JoinedPractice, Behaviour, NumberOfVisits, TotalCost, (TotalCost / NumberOfVisits) AS CostPerVisit from ( ");
+            selectBuilder.Append("SELECT AnimalID, PetID, OwnerID, RTRIM(Type) as Type, Name as AnimalName, JoinedPractice, Behaviour, NumberOfVisits, TotalCost, CAST(ROUND(TotalCost/NumberOfVisits,2) AS numeric(6,2)) AS CostPerVisit from ( ");
             selectBuilder.Append("SELECT a.AnimalID, p.PetID, p.OwnerID, a.Type, p.Name, p.JoinedPractice, c.Behaviour, Count(v.PetID) as NumberOfVisits, sum(pr.Cost) TotalCost from Animal a ");
             selectBuilder.Append("JOIN Pet p ON P.AnimalID = a.AnimalID ");
             selectBuilder.Append("JOIN Visit v ON v.PetID = p.PetID ");
@@ -88,6 +87,24 @@ namespace PetDAL
             {
 
                 throw;
+            }
+
+            if (string.IsNullOrEmpty(whereClause))
+            {
+                var owners = GetOwners();
+
+                foreach (var item in animals)
+                {
+                    var ow = owners.Where(o => o.OwnerID == item.OwnerID).FirstOrDefault();
+                    item.FullName = ow.FullName;
+                }
+            }
+            else
+            {
+                foreach (var item in animals)
+                {
+                    item.FullName = owner.FullName;
+                }
             }
 
             return animals;
