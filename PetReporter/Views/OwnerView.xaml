@@ -48,7 +48,7 @@
                 DisplayMemberPath="FullName" />
 
         <StackPanel Grid.Row="2" Grid.Column="5" Grid.RowSpan="2">
-        <Button Content="Select User" Margin="10,20,10,10" Height="30" Width="100">
+        <Button Content="Select Owner" Margin="10,20,10,10" Height="30" Width="100">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Click">
                     <cal:ActionMessage MethodName="LoadReportDetails" />
