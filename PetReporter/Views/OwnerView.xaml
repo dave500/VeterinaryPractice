@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
              xmlns:cal="http://www.caliburnproject.org"
-        Title="OwnerView" Height="450" Width="800" ResizeMode="NoResize" WindowStyle="SingleBorderWindow">
+        Title="OwnerView" Height="450" Width="800" ResizeMode="NoResize" WindowStyle="SingleBorderWindow" Top="200" Left="200">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
