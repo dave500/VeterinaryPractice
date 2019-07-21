@@ -102,31 +102,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FeKFkwvOhlR90HAjhZZvaXvoS6W+ZtEyQOu03NRWJuk=</dsig:DigestValue>
+        <dsig:DigestValue>Ze+i0awPWSa20kDoT7nTmR/+6+baE5zEyIUpE3DbNbE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PetLib.dll" size="7680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PetLib.dll" size="6656">
       <assemblyIdentity name="PetLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>B7bZrWoW0VcFS/E1rqVYN7kw007eqGXHRAOcLp/piXw=</dsig:DigestValue>
+        <dsig:DigestValue>QnCoin0llsP2C8w0NTpqCCIZ+sadRdJmvxSkHqUCcK4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PetReporter.exe" size="345504">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PetReporter.exe" size="344480">
       <assemblyIdentity name="PetReporter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WMaTVBQOeIWqVxxTQpwqbakRiEhB+6tCYh3TGiIf47w=</dsig:DigestValue>
+        <dsig:DigestValue>xzgLUxrM4oENOYr/cxQAUyTELlyCDQY4c0dbf7iQc6Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
