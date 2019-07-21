@@ -1,0 +1,7 @@
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporting\bin\Debug\PetReporting.dll
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporting\bin\Debug\PetReporting.pdb
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporting\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporting\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporting\obj\Debug\PetReporting.csprojResolveAssemblyReference.cache
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporting\obj\Debug\PetReporting.dll
+C:\Dev\Elekta-Solution\VeterinaryPractice\PetReporting\obj\Debug\PetReporting.pdb

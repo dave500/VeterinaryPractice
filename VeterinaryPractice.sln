@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetDAL", "PetDAL\PetDAL.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetLib", "PetLib\PetLib.csproj", "{F06AB9C2-C73C-4203-B1CA-F86E2D18B183}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetReporterTest", "PetReporterTest\PetReporterTest.csproj", "{FF7975D6-F8DC-41EB-965D-ADF58AACEA5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetReporting", "PetReporting\PetReporting.csproj", "{55D71EAE-AA1F-4697-BCB9-05E1226D1E6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{F06AB9C2-C73C-4203-B1CA-F86E2D18B183}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F06AB9C2-C73C-4203-B1CA-F86E2D18B183}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F06AB9C2-C73C-4203-B1CA-F86E2D18B183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7975D6-F8DC-41EB-965D-ADF58AACEA5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7975D6-F8DC-41EB-965D-ADF58AACEA5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7975D6-F8DC-41EB-965D-ADF58AACEA5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7975D6-F8DC-41EB-965D-ADF58AACEA5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D71EAE-AA1F-4697-BCB9-05E1226D1E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D71EAE-AA1F-4697-BCB9-05E1226D1E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D71EAE-AA1F-4697-BCB9-05E1226D1E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D71EAE-AA1F-4697-BCB9-05E1226D1E6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

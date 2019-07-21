@@ -76,10 +76,15 @@ namespace PetReporter.ViewModels
         {
             bool status = Helpers.ReportViewHelper.FormatCSVString(Animals);
 
-            if (true)
+            if (status)
             {
                 ReportMessage = "Report Has Been Sussefully Created";
                 ReportColour = "Green";
+            }
+            else
+            {
+                ReportMessage = @"Error: Please ensure directory c:\temp exists";
+                ReportColour = "red";
             }
         }
 

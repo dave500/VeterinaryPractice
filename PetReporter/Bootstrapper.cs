@@ -24,7 +24,7 @@ namespace PetReporter
         {
             container = new SimpleContainer();
 
-            container.Singleton<IReportRepo, ReportRepo>();
+            container.Singleton<IReportRepo, ReportRepoTest>();
             container.Singleton<IEventAggregator, EventAggregator>();
             container.Singleton<IWindowManager, WindowManager>();
 
